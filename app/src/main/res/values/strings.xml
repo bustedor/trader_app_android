@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TraderApp</string>
+    <string name="kullanıcı_adı">Kullanıcı Adı</string>
+    <string name="sifre">Şifre</string>
+    <string name="giris">Giriş yapılıyor...</string>
+    <string name="bekleyiniz">Lütfen bekleyiniz.</string>
+    <string name="empty"></string>
+    <string name="veri">Veri alınıyor...</string>
+</resources>

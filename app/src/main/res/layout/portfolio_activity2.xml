@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/firstText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Menkul"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/secondText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Miktar T2"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/thirdText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Fiyat"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/fourthText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Tutar"
+            android:textSize="20sp"></TextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout"
+        android:id="@+id/rcycler_view"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottomLinearLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/rcycler_view"
+        android:weightSum="2"
+        android:gravity="bottom"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/toplamTutarStringText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Toplam Tutar:"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/toplamTutarNumberText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"></TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
